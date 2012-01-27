@@ -1,0 +1,487 @@
+/* 
+* Skeleton V1.0.3
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 7/17/2011
+*/
+
+
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Tabs
+	#Forms
+	#Misc */
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+
+================================================== */
+	
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	body {
+		line-height: 1; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+		
+		
+/* #Basic Styles
+================================================== */
+	body { 
+		background: ;
+		font: 14px/21px Helvetica, Arial, sans-serif;
+		color: ;
+		/* -webkit-font-smoothing: antialiased; */ /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+ }
+	
+
+/* #Typography
+================================================== */
+	h1, h2, h3, h4, h5, h6 { 
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: normal; 
+		color: 
+	}
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1 { font-size: 32px; line-height: 1.2em; margin-bottom: 14px;}
+	h2 { font-size: 18px; line-height: 20px; margin-bottom: 10px; }
+	h3 { font-size: 15px; line-height: 18px; margin-bottom: 8px; }
+	h4 { font-size: 13px; line-height: 13px; margin-bottom: 4px; }
+	h5 { font-size: 12px; line-height: 12px; }
+	h6 { font-size: 11px; line-height: 11px; }
+	
+	h1.page-title {} /* nodo */
+
+	b 			{ font-weight: bold; }
+	p 			{ margin: 0 0 20px 0;}
+	p img 		{ margin: 0; }
+	p.lead 		{ font-size: 21px; line-height: 27px; color: #777;  }
+	
+	em 			{ font-style: italic; }
+	strong 		{ font-weight: bold; font-size: 1.1em }
+	small 		{ font-size: 80%; }
+	
+	.clear 		{clear: both;}
+	.floatl 	{float: left;}
+	.floatr 	{float: right;}
+	.floatn 	{float: none;}
+	.hide 		{display: none;}
+	.hideText 	{text-indent: -5000px; overflow: hidden;}
+	.dblock 	{display: block;}	
+	.mb10 		{margin-bottom: 10px;}
+	.mb20 		{margin-bottom: 20px;}
+
+	img.left {margin:0.42em 0.2em 0 0;}
+	img.right {margin: 0.42em 0 0 0.2em;}
+	
+/* -- centering -- */
+/* vertical centering technique [http://www.jakpsatweb.cz/css/css-vertical-center-solution.html] */
+	.vcenter{/* height of .vcenter element is required */ overflow:hidden; *position:relative; display:table; *display:block}
+	.vcenter .outer{display:table-cell; vertical-align:middle; width:100%; *position:absolute; *top:50%}
+	.vcenter .inner{*position:relative; *top:-50%}
+	
+	.hcenter{/* width is required */ margin-left:auto !important; margin-right:auto !important}	
+	
+/*	Blockquotes  */
+	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+	blockquote cite { display: block; font-size: 12px; color: #555; }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+	
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+
+/* #Links
+================================================== */
+	a, a:visited { color: #6d7b77; outline: 0; }
+	a:hover, a:focus { color: #344253; }
+	p a, p a:visited { line-height: inherit; }
+	.comment-count a { text-decoration: none; }
+	
+/* #Lists
+================================================== */
+	ul, ol { }
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 4px 0 5px 30px; }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 6px; }
+	li { line-height: 18px; margin-bottom: 12px; }
+	ul.large li { line-height: 21px; }
+	li p { line-height: 21px; }
+	.page-node .content-body ul {margin-bottom: 20px;}
+	.page-node .content-body ul li {list-style-type: disc; margin-left: 20px;} 
+	
+/* #Responsive Images
+================================================== */
+
+	img { 
+		max-width: 100%;
+		height: auto; 
+	}
+
+
+/* #Buttons
+================================================== */
+	
+	a.button, 
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {
+		background: #576e76; /* Old browsers */
+		border: 0;
+	  padding: 4px 12px;
+	  -moz-border-radius: 3px;
+	  -webkit-border-radius: 3px;
+	  border-radius: 3px;
+	  color: #fff;
+	  display: inline-block;
+	  font-size: 11px;
+	  font-weight: bold;
+	  text-decoration: none;
+	  text-shadow: 0 1px rgba(0, 0, 0, .75);
+	  cursor: pointer;
+	  margin-bottom: 20px;
+	  line-height: 21px;
+	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	  -moz-transition: all 0.2s ease-in-out;
+	  -webkit-transition: all 0.2s ease-in-out;
+	  transition: all 0.2s ease-in-out;
+	  
+	  }
+	  
+	a.button:hover, 
+	button:hover,
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover {
+		color: #e1e061;
+		background: #617657;
+		}
+	  
+  a.button:active, 
+  button:active,
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active {
+ 		background: #2f454d; /* Old browsers */
+		border: 0;
+	  padding: 4px 12px;
+	  -moz-border-radius: 3px;
+	  -webkit-border-radius: 3px;
+	  border-radius: 3px;
+	  color: #fff;
+	  display: inline-block;
+	  font-size: 11px;
+	  font-weight: bold;
+	  text-decoration: none;
+	  text-shadow: 0 1px rgba(0, 0, 0, .75);
+	  cursor: pointer;
+	  margin-bottom: 20px;
+	  line-height: 21px;
+	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;  }
+	
+	.button.full-width, 
+	button.full-width,
+	input[type="submit"].full-width,
+	input[type="reset"].full-width,
+	input[type="button"].full-width { 
+		width: 100%;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		text-align: center; }
+	
+	
+/* #Tabs (activate in app.js)
+================================================== */
+	ul.tabs { 
+		display: block;
+		margin: 0 0 20px 0;
+		padding: 0;
+		border-bottom: solid 1px #ddd;
+		clear: both; }
+	ul.tabs li { 
+		display: block;
+		width: auto;
+		height: 30px;
+		padding: 0;
+		float: left;
+		margin-bottom: 0; }
+	ul.tabs li a { 
+		display: block; 
+		text-decoration: none;
+		width: auto; 
+		height: 29px; 
+		padding: 0px 20px; 
+		line-height: 30px; 
+		border: solid 1px #ddd;
+		border-width: 1px 0 0 1px; 
+		margin: 0;  
+		background: #f5f5f5;
+		font-size: 13px; }
+	ul.tabs li a.active { 
+		background: #fff; 
+		height: 30px;
+		position: relative;
+		top: -4px;
+		padding-top: 4px;
+		border-right-width: 1px;
+		margin: 0 -1px 0 0;
+		color: #111;
+		-moz-border-radius-topleft: 2px;
+		-webkit-border-top-left-radius: 2px;
+		border-top-left-radius: 2px;
+		-moz-border-radius-topright: 2px;
+		-webkit-border-top-right-radius: 2px;
+		border-top-right-radius: 2px; }
+	ul.tabs li:first-child a {
+		-moz-border-radius-topleft: 2px;
+		-webkit-border-top-left-radius: 2px;
+		border-top-left-radius: 2px; }
+	ul.tabs li:last-child a {
+		border-width: 1px 1px 0 1px;
+		-moz-border-radius-topright: 2px;
+		-webkit-border-top-right-radius: 2px;
+		border-top-right-radius: 2px; }
+	
+	ul.tabs-content { margin: 0; display: block; }
+	ul.tabs-content > li { display:none; }
+	ul.tabs-content > li.active { display: block; }
+		
+	/* Clearfixing tabs for beautiful stacking */
+	ul.tabs:before,
+	ul.tabs:after {
+	  content: '\0020';
+	  display: block;
+	  overflow: hidden;
+	  visibility: hidden;
+	  width: 0;
+	  height: 0; }
+	ul.tabs:after {
+	  clear: both; }
+	ul.tabs {
+	  zoom: 1; }
+			
+			
+/* #Forms
+================================================== */
+
+	form { 
+		margin-bottom: 20px; }
+	fieldset { 
+		margin-bottom: 20px; }
+	input[type="text"], 
+	input[type="password"],
+	input[type="email"],
+	textarea, 
+	select {
+		border: 1px solid #ccc;
+		padding: 6px 4px;
+		outline: none;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #777;
+		margin: 0;
+		width: 210px;
+		max-width: 100%;
+		display: block;
+		margin-bottom: 20px;
+		background: #fff; }
+	select { 
+		padding: 0; }
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus, 
+	textarea:focus {
+		border: 1px solid #aaa;
+ 		color: #444;
+ 		-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		box-shadow:  0 0 3px rgba(0,0,0,.2); }
+	textarea {
+		min-height: 60px; }
+	label,
+	legend { 
+		display: block;
+		font-weight: bold;
+		font-size: 13px;  }
+	select { 
+		width: 220px; }
+	input[type="checkbox"] {
+		display: inline; }
+	label span,
+	legend span {
+		font-weight: normal;
+		font-size: 13px;
+		color: #444; }
+		
+/* #Misc
+================================================== */
+	.remove-bottom { margin-bottom: 0 !important; }
+	.half-bottom { margin-bottom: 10px !important; }
+	.add-bottom { margin-bottom: 20px !important; }
+
+		
+/* END SKELETON BASE.CSS */	
+
+/**
+ * Base styles.
+ * Provides sensible defaults for everything to save you time. Override
+ * with an empty stylesheet to start over from scratch.
+ */
+
+/**
+ * Skip navigation ====================================================
+ *
+ * 508 compliance link for skipping navigation elements.
+ */
+#skipnav {
+  position:absolute;
+  left:-1000px;
+  top:-1000px;
+  }
+
+/**
+ * Page width limiter =================================================
+ *
+ * Can be nested within major structural elements to allow full-width
+ * bleeds combined with a fixed page width. Set a width on this in your
+ * theme to get a consistent page width on major elements.
+ */
+.limiter { margin:0px auto; }
+#main .limiter {}
+
+/**
+ * Links ==============================================================
+ *
+ * Any ul.links are given a horizontal tab-like formatting.
+ */
+ul.links li,
+ul.links li a { float:left; }
+
+ul.links.inline,
+ul.links.inline li,
+ul.links.inline li a {
+  float:none;
+  display:inline;
+  }
+
+/**
+ * Tables =============================================================
+ */
+table {
+  width:100%;
+  margin:0px 0px 20px;
+  }
+
+table th,
+table td { vertical-align:middle; }
+
+/**
+ * Forms ==============================================================
+ */
+input.form-text,
+select,
+textarea { border:1px solid #ccc; }
+
+input.form-submit,
+label { font-weight:bold; }
+
+input.form-submit { cursor:pointer; }
+
+input.form-radio,
+input.form-checkbox { vertical-align:middle; }
+
+.form-item .description,
+.description {
+  color:#666;
+  font-size:11px;
+  }
+
+fieldset legend a {background: #556577; padding: 2px 5px; color: #fefff8}
+
+fieldset.collapsible.collapsed {border: none; padding: 0; background: transparent}
+fieldset.collapsible {border: solid 1px #cfd1bd; padding: 15px; background: #fff;}
+fieldset.collapsible .fieldset-title { cursor:pointer; }
+
+html.js fieldset.collapsed .fieldset-content,
+html.js fieldset.collapsed .fieldset-wrapper { display:none; }
+
+/**
+ * Views ==============================================================
+ */
+table.grid-2 td { width:50%; }
+table.grid-3 td { width:33.3%; }
+table.grid-4 td { width:25%; }
+table.grid-5 td { width:20%; }
+table.grid-6 td { width:16.6%; }
+table.grid-7 td { width:14.2%; }
+table.grid-8 td { width:12.5%; }
+
+/**
+ * Markup free clearing ===============================================
+ *
+ * Consider adding your own selectors to this instead of finding ways
+ * to sneak the clear-block class into Drupal's markup.
+ * From http://www.positioniseverything.net/easyclearing.html
+ */
+ul.links:after,
+.clear-block:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  }
+
+  /* Exclude inline links from clear-block behavior */
+  ul.inline:after {
+    content: "";
+    display:none;
+    clear:none;
+    }
+
+ul.links,
+.clear-block {
+  display: inline-block;
+  }

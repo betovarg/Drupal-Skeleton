@@ -1,0 +1,395 @@
+/* 
+* Skeleton V1.0.3
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 7/17/2011
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* font sizes
+================================================== 
+	10px: 0.625em 	| 12/16
+	11px: 0.687em	| 11/16 *admin only
+	12px: 0.75em 	| 12/16
+	13px: 0.812em	| 13/16 *admin only
+	14px: 0.875em 	| 14/16
+	16px: 1em		| 16/16	
+	18px: 1.125em	| 18/16
+	24px: 1.5em		| 24/16
+	30px: 1.875em	| 30/16
+	36px: 2.25em	| 36/16
+	48px: 3em		| 48/16
+*/
+
+/* #Site Styles
+================================================== */
+
+.wrap {position: relative; z-index: 5; overflow: hidden;}
+.header {position: relative; z-index: 5; padding: 20px 0 20px;}
+.header .logo {}
+.container {padding-bottom: 15px;}
+.main {}
+.main .over-content {}
+.main .over-content p {margin-bottom: 0;}
+.main .content-container {margin-bottom: 15px; z-index: 5; position: relative}
+.main .ads {margin-bottom: 15px}
+.main .sub {}
+.page-node .main {padding-bottom: 50px}
+.slider.container {background: #fff; margin-bottom: 15px;}
+.sidebar .limiter {}
+
+/* elementos que usan sprite 
+================================================== */
+
+.slideshow .pager-item a,
+.slideshow .pager-item.activeSlide a {
+	background-image: url(../images/sprite.png);
+	background-repeat: no-repeat;
+	}
+
+/* elementos que usan transitions 
+================================================== */
+.transitions {
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+/* .header Styles
+================================================== */
+
+
+/* #sidebar block styles
+================================================== */
+.sidebar {}
+
+/* menu sidebar 
+================================================== */
+
+/* #Page Styles
+================================================== */
+.breadcrumb {
+	margin-bottom: 30px;
+	font-size: 0.75em; /* 12 / 16 = 0.75em */ 
+	}
+
+/* sobre contenido en el home
+================================================== */
+
+/* Nodo
+================================================== */
+
+/* Comentarios
+================================================== */
+
+comments-title,
+.box h2 {
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	text-indent: 20px;
+	background-position: -365px -363px;
+}
+.comments-title h2 {float: left; text-transform: uppercase;}
+.box h2 {
+	border-bottom: dotted 1px #bdc2ba;
+	margin-bottom: 0px;
+	text-indent: 0px;
+	background-image: none;
+	font-size: 1em;
+}
+#comments {
+	overflow: hidden;
+	clear: both;
+}
+#comments .comment {
+	margin-left: 120px;
+	position: relative;
+	margin-bottom: 10px;
+	position: relative;
+}
+#comments .indented {
+	margin-left: 50px;
+}
+#comments .indented .indented .indented {
+	margin-left: 0;
+}
+#comments span.new {
+	background: #e1c81c;
+	padding: 2px 4px;
+	position: absolute;
+	left: -60px;
+}
+#comments .picture,
+#comments .comment .submitted {
+	position: absolute;
+	left: -120px;
+	width: 100px;	
+	border: 0;
+	text-align: right;
+	line-height: 1.2em;
+	font-size: 0.75em;
+}
+#comments .comment h3 {
+	font-size: 0.75em;
+	padding-left: 20px;
+}
+#comments .comment .content,
+#comments .box .content
+ {
+	border-left: solid 1px #d8dcd5;
+	padding: 0 20px;
+	font-size: 0.875em;
+	background: transparent;
+	margin-bottom: 10px;
+	color: #666;
+}
+#comments .box .content {
+	padding: 20px 0;
+}
+#comments .box .content {
+	border-left: 0;
+}
+.box ul.tips {
+	padding: 10px;
+	background: #efefef;
+	margin: 10px 0;
+}
+#comments .links {
+	margin: 0;
+}
+#comments .links li a {
+	background: #e1e1e1;
+	font-size: 0.75em;
+	padding: 2px 5px;
+	margin-right: 5px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	
+}
+#comments .links li a:hover {
+	background: #eee;
+	color: #333;
+}
+
+fieldset.captcha {}
+fieldset.captcha legend {
+	background-position: -361px -309px; 
+	text-indent: 25px;
+	margin-left: -25px;
+	margin-bottom: 10px;
+}
+fieldset.captcha .description {
+	font-weight: bold;
+	font-style: italic;
+	margin-bottom: 10px;
+	font-size: 1em;
+}
+.Image.CAPTCHA {margin-bottom: 10px;}
+.node-form {margin-bottom: 100px; }
+
+/* foto principal de nodo
+================================================== */
+
+.field-field-main-picture {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.field-field-main-picture img {border: solid 1px #d8d9cb}
+.image-description {font-size: 0.687em; font-style: italic;}
+
+fieldset.captcha {}
+fieldset.captcha legend {
+	background-position: -361px -309px; 
+	text-indent: 25px;
+	margin-left: -25px;
+	margin-bottom: 10px;
+}
+
+fieldset.captcha .description {
+	font-weight: bold;
+	font-style: italic;
+	margin-bottom: 10px;
+	font-size: 0.875px; /* 14/16 */
+}
+.Image.CAPTCHA {margin-bottom: 10px;}
+.node-form {margin-bottom: 100px; }
+
+
+/* .footer block styles
+================================================== */
+.footer {}
+
+/* Front page styles
+================================================== */
+.front .over-content {}
+
+/* ------------- Slideshow logos ------------- */
+/* ------------- --------------- ------------- */
+
+/* contiene todo el slider */
+.slideshow {}
+
+/* contiene el header del slideshow / titulo */
+.slideshow .view-header {}
+
+/* control de z-index de slides y controles */
+.slideshow .views_slideshow_singleframe_slide {position: relative; z-index: 10}
+.slideshow .views-slideshow-controls-top {z-index: 11}
+.slideshow .views-slideshow-controls-bottom {z-index: 11}
+
+/* contiene los slides todos los slides */
+.slideshow .views_slideshow_singleframe_teaser_section {}
+
+/* Mantener si se quiere slideshow con pager centrado */
+.slideshow .view-content {text-align: center;} 
+
+/* Contiene cada slide / dentro se encuentran los items */
+/* ----- a este slide es al que se le deben reescribir witdh y height para hacerlo responsive */
+.slideshow .views_slideshow_singleframe_slide {}
+
+/* cada item */
+/* Dicta el ancho del singleframe pager */
+.slideshow .views-row {text-align: left;} 
+
+/* responsive images slider - SUSTITUIR POR ESTILOS */
+.imagen-responsive span {}
+
+/* contiene los controles */
+.slideshow .views-slideshow-controls-top {position: absolute; width: 100%; top: 50px;}
+.slideshow .views_slideshow_previous,
+.slideshow .views_slideshow_next {position: absolute; top: 0px; display: block; /* text-indent: -9999px; */}
+.slideshow .views_slideshow_previous {left: 0; }
+.slideshow .views_slideshow_next {right: 0; }
+.slideshow .views_slideshow_pause {/* display: none; */}
+
+.slideshow .views_slideshow_singleframe_pager {
+	float: none;
+	margin: 0 auto;
+	overflow: hidden;
+	display: block-inline;
+}
+.slideshow .pager-item {
+	display: block;
+	float: left;
+}
+.slideshow .pager-item a {
+	width: 13px;
+	height: 13px;
+	background-position: 0 -2px;
+	display: block;
+	text-indent: -1000px;
+	overflow: hidden;
+	-moz-transition: none;
+	-webkit-transition: none;
+	transition: none;
+	
+}
+.slideshow .pager-item.activeSlide a {
+	background-position: -13px -2px;
+}
+
+/* #Media Queries
+================================================== */
+	
+	/* more then 960px window */
+	@media only screen and (min-width: 960px) and (max-width: 3000px) {
+	
+	}
+
+	/* iPad Portrait/Browser */
+	@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+ 	}
+	
+	/* Mobile/Browser */
+	@media only screen and (max-width: 767px) {
+		
+		/* font size */
+		body, p {font-size: 1em !important; }
+		 h1 {font-size: 1.6em !important;}
+
+		/* slider =============================== */
+		
+		/* controla ALTO de todo el contenedor */
+		.slideshow .views_slideshow_singleframe_teaser_section {height: ;}
+
+		/* contenedor de slides */
+		.slideshow .views_slideshow_singleframe_slide {height: auto !important;}
+		
+		.views_slideshow_slide .views-row {
+			
+		} /* ancho de row */
+ 
+		.slideshow .views_slideshow_previous, .slideshow .views_slideshow_next {
+		
+		} /* posicion de controles */
+ 
+	}
+	
+	/* Mobile Landscape/Browser */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		
+	}
+
+	/* Anything smaller than standard 960 */
+	@media only screen and (max-width: 959px) {
+
+	}
+	
+	/* iPad Portrait Only */
+	@media only screen and (min-width: 768px) and (max-width: 991px) and (max-device-width: 1000px) {
+	}
+	
+	/* Mobile Only */
+	@media only screen and (max-width: 767px) and (max-device-width: 1000px) {
+	
+	}
+	
+	/* Mobile Landscape Only */
+	@media only screen and (min-width: 480px) and (max-width: 767px) and (max-device-width: 1000px) {
+	}
+	
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file 
+		Just create a "fonts" folder at the root, 
+		copy your FontName into code below and remove
+		comment brackets */
+		
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
+
+/* IE fixes
+================================================== */
+
+/* IE7, IE8 */
+.views_slideshow_singleframe_slide {
+	background-color/*\**/: transparent !important\9;
+}
+
+/* PIE htc loader */
+.loads-piecss {
+	behavior: url(/PIE.htc);	
+}

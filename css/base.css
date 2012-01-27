@@ -1,0 +1,991 @@
+/* 
+* Skeleton V1.0.3
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 7/17/2011
+*/
+
+/* Table of Content
+==================================================
+	#Normalize
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Tabs
+	#Forms
+	#Misc */
+
+
+/*! Normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
+
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+}
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ */
+
+audio:not([controls]) {
+    display: none;
+}
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+
+[hidden] {
+    display: none;
+}
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Keeps page centred in all browsers regardless of content height
+ * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    overflow-y: scroll; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 3 */
+    -ms-text-size-adjust: 100%; /* 3 */
+}
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+
+body {
+    margin: 0;
+}
+
+/* 
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+
+/* =============================================================================
+   Typography fixes 
+*/
+
+/*
+ * Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
+ */
+
+h1 {
+    font-size: 2em;
+}
+
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
+
+b, 
+strong { 
+    font-weight: bold; 
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+
+pre,
+code,
+kbd,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+
+/* 1 */
+
+q {
+    quotes: none;
+}
+
+/* 2 */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+small {
+    font-size: 75%;
+}
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul,
+ol {
+    margin-left: 0;
+    padding: 0 0 0 40px;
+}
+ul.menu {
+	padding: 0;
+	margin: 0;
+}
+dd {
+    margin: 0 0 0 40px;
+}
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE9 
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11
+ */
+
+figure {
+    margin: 0;
+}
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
+
+form {
+    margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects alignment displayed oddly in IE6/7
+ */
+
+legend {
+    border: 0; /* 1 */
+    *margin-left: -7px; /* 2 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/*
+ * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
+ */
+
+button,
+input {
+    line-height: normal; /* 1 */
+}
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6
+ */
+
+button,
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+    cursor: pointer; /* 1 */
+    -webkit-appearance: button; /* 2 */
+    *overflow: visible;  /* 3 */
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding that is displayed in S5, Chrome on OS X
+ */
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+/* 
+ * Remove most spacing between table cells
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* =============================================================================
+							FIN DE NORMALIZE
+   ========================================================================== */
+		
+/* #Basic Styles
+================================================== */
+	body { 
+		font: 1em/1.312em "Cabin", Helvetica, Arial, sans-serif;
+		color: #444;
+		/* -webkit-font-smoothing: antialiased; */ /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+	}
+	
+	.clear 		{clear: both;}
+	.floatl 	{float: left;}
+	.floatr 	{float: right;}
+	.floatn 	{float: none;}
+	.hide 		{display: none;}
+	.hideText 	{text-indent: -5000px; overflow: hidden;}
+	.dblock 	{display: block;}	
+	.mb10 		{margin-bottom: 10px;}
+	.mb20 		{margin-bottom: 20px;}
+	.p10		{padding: 10px;}
+	.p20		{padding: 20px;}
+
+	img.left {margin:0.42em 0.2em 0 0;}
+	img.right {margin: 0.42em 0 0 0.2em;}	
+
+	/* -- centering -- */
+	/* vertical centering technique [http://www.jakpsatweb.cz/css/css-vertical-center-solution.html] */
+	.vcenter{/* height of .vcenter element is required */ overflow:hidden; *position:relative; display:table; *display:block}
+	.vcenter .outer{display:table-cell; vertical-align:middle; width:100%; *position:absolute; *top:50%}
+	.vcenter .inner{*position:relative; *top:-50%}
+	
+	.hcenter{/* width is required */ margin-left:auto !important; margin-right:auto !important}	
+
+/* =Typography
+
+   mezcla de + Andy Clarke + Ethan + Adactio / por @leivajd
+   "Type study: Sizing the legible letter"
+   http://www.readability.com/articles/lcout8db
+   
+   Cambios por Manatí, para mezclar blockquote de base.css de Skeleton
+   ==========================================================================
+
+	font sizes
+	================================================== 
+	10px: 0.625em 	| 12/16
+	11px: 0.687em	| 11/16 *admin only
+	12px: 0.75em 	| 12/16
+	13px: 0.812em	| 13/16 *admin only
+	14px: 0.875em 	| 14/16
+	18px: 1.125em	| 18/16
+	24px: 1.5em		| 24/16
+	30px: 1.875em	| 30/16
+	36px: 2.25em	| 36/16
+	48px: 3em		| 48/16
+
+================================================== */
+	h1, 
+	h2, 
+	h3, 
+	h4, 
+	h5, 
+	h6 {
+	font-family : "Helvetica Neue", Helvetica, Arial;
+	font-weight : bold; 
+	margin: 0
+	}
+	
+	h1 { 
+	margin-bottom : .75em;
+	font-size : 3em; /* 48 / 16 = 3 */
+	line-height : 1.2; }
+	
+	h2 { 
+	margin-bottom : .75em;
+	font-size : 2em; /* 36 / 16 = 2 */
+	line-height : 1.2; }
+	
+	h3 { 
+	margin-bottom : 1em;
+	font-size : 1.5em; /* 24 / 16 = 1.5 */
+	line-height : 1.3; }
+	
+	h4 { 
+	margin-bottom : 1.25em;
+	font-size : 1.25em; /* 20 / 16 = 1.25 */
+	line-height : 1.25; }
+	
+	h5 { 
+	margin-bottom : 1.5em;
+	font-size : 1em; /* 16 / 16 = 1 */ }
+	
+	h6 { 
+	font-size : 1em; /* 16 / 16 = 1 */ }
+	
+	p, 
+	ol, 
+	ul, 
+	dl, 
+	address { 
+	margin-bottom : 1.5em; 
+	font-size : 1em; /* 16 / 16 = 1 */ }
+	
+	p {
+		hyphens : auto; 
+	}
+	
+	ul, 
+	ol { 
+	margin : 0 0 1.5em -24px; 
+	padding : 0 0 0 24px; }
+	
+	li ul, 
+	li ol { 
+	margin : 0;
+	font-size : 1em; /* 16 / 16 = 1 */ }
+	
+	dl, 
+	dd { 
+	margin-bottom : 1.5em; }
+	
+	dt { 
+	font-weight : normal; }
+	
+	blockquote  { 
+	margin : 0 0 1.5em -24px; 
+	padding-left : 24px; 
+	border-left : 1px solid rgb(200,200,200);
+	font-style : italic; }
+	
+	blockquote, blockquote p {
+	font-size: 1.06em; /* 17 / 16 = 1.0625 */
+	line-height: 1.625em; /* 24 / 16 = 1.625 */
+	color: #777;
+	font-style: italic;
+	}
+	
+	blockquote cite {
+	display: block;
+	font-size: 0.75em; /* 12 / 16 = 0.75 */
+	color: #555;
+	}
+	
+	blockquote cite:before {
+	content: "\2014 \0020";
+	}
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
+	color: #555;
+	}
+	
+	blockquote:before, 
+	blockquote:after, 
+	q:before, 
+	q:after {
+	content : '';
+	content : none; }
+	
+	abbr[title] { 
+	border-bottom : 1px dotted; 
+	cursor : help; }
+	
+	b, strong { 
+	font-weight : bold; }
+	
+	dfn { 
+	font-style : italic; }
+	
+	hr {
+	border-top: solid #ddd;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 10px 0 30px;
+	height: 0;
+	}
+	
+	ins { 
+	background-color : rgb(240,240,240); 
+	color : rgb(0,0,0); 
+	text-decoration : none; }
+	
+	mark { 
+	background-color : rgb(240,240,240); 
+	color: rgb(0,0,0); 
+	font-style : italic; 
+	font-weight : bold; }
+	
+	pre, 
+	code, 
+	kbd, 
+	samp { 
+	font-family : monospace, monospace; 
+	_font-family : 'courier new', monospace; 
+	font-size : .875em; 
+	line-height : 1.5; }
+	
+	pre { 
+	white-space : pre; 
+	white-space : pre-wrap; 
+	word-wrap : break-word; }
+	
+	q { 
+	quotes : none; }
+	
+	q:before, 
+	q:after { 
+	content : ""; 
+	content : none; }
+	
+	small { 
+	font-size : 1em; /* 16 / 16 = 1 */ }
+	
+	sub, sup { 
+	font-size : 75%; 
+	line-height : 0; 
+	position : relative; 
+	vertical-align : baseline; }
+	
+	sup { 
+	top : -.5em; }
+	
+	sub { 
+	bottom : -.25em; }
+
+
+/* #Links
+================================================== */
+	a, a:visited { color: #6d7b77; outline: 0; }
+	a:hover, a:focus { color: #45c3d5; }
+	p a, p a:visited { line-height: inherit; }
+	.comment-count a { text-decoration: none; }
+	
+/* #Lists
+================================================== */
+	ul { list-style: none outside; }
+	ol { list-style: decimal; }
+	ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 4px 0 5px 30px; }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 6px; }
+	li { 
+	line-height: 1.125em; /* 18 / 16 = 1.125 */
+	margin-bottom: 12px; 
+	}
+	ul.menu li { 
+	margin-bottom: 0; 
+	}
+	ul.large li {
+	line-height: 1.31em; /* 21 / 16 = 1.3125 */
+	}
+	li p {
+	line-height: 1.31em; /* 21 / 16 = 1.3125 */ 
+	}
+	.page-node .content-body ul {margin-bottom: 20px;}
+	.page-node .content-body ul li {list-style-type: disc; margin-left: 20px;} 
+	
+/* #Responsive Images
+================================================== */
+
+	img { 
+		max-width: 100%;
+		height: auto; 
+	}
+
+
+/* #Buttons
+================================================== */
+	
+	a.button, 
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {
+		background: #555;
+		border: 0;
+	  padding: 4px 12px;
+	  -moz-border-radius: 3px;
+	  -webkit-border-radius: 3px;
+	  border-radius: 3px;
+	  color: #fff;
+	  display: inline-block;
+	  font-size: 0.687em; /* 11/16 */
+	  font-weight: bold;
+	  text-decoration: none;
+	  text-shadow: 0 1px rgba(0, 0, 0, .75);
+	  cursor: pointer;
+	  margin-bottom: 20px;
+	  line-height: 21px;
+	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	  -moz-transition: all 0.2s ease-in-out;
+	  -webkit-transition: all 0.2s ease-in-out;
+	  transition: all 0.2s ease-in-out;
+	  
+	  }
+	  
+	a.button:hover, 
+	button:hover,
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover {
+		color: #fff;
+		background: #333;
+		}
+	  
+  a.button:active, 
+  button:active,
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active {
+ 		background: #2f454d; /* Old browsers */
+		border: 0;
+	  padding: 4px 12px;
+	  -moz-border-radius: 3px;
+	  -webkit-border-radius: 3px;
+	  border-radius: 3px;
+	  color: #fff;
+	  display: inline-block;
+	  font-size: 0.687em; /* 11/16 */
+	  font-weight: bold;
+	  text-decoration: none;
+	  text-shadow: 0 1px rgba(0, 0, 0, .75);
+	  cursor: pointer;
+	  margin-bottom: 20px;
+	  line-height: 21px;
+	  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;  }
+	
+	.button.full-width, 
+	button.full-width,
+	input[type="submit"].full-width,
+	input[type="reset"].full-width,
+	input[type="button"].full-width { 
+		width: 100%;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		text-align: center; }
+	
+.tabs { display: block; margin: 0 0 20px 0; padding: 0; height: 30px; border-bottom: solid 1px #ddd; clear: both;}
+	.tabs li { display: block; width: auto; height: 30px; padding: 0; float: left; }
+    .tabs li a { display: block; width: auto; height: 29px; padding: 0px 9px; line-height: 30px; border: solid 1px #ddd; margin: 0 -1px 0 0; color: #555; background: #eee; text-decoration: none; }
+    .tabs li a.active { background: #fff; border-width: 1px 1px 0px 1px; height: 30px; font-weight: bold; }
+			
+/* #Forms
+================================================== */
+
+	form { 
+		margin-bottom: 20px; }
+	fieldset { 
+		margin-bottom: 20px; }
+	input[type="text"], 
+	input[type="password"],
+	input[type="email"],
+	textarea, 
+	select {
+		border: 1px solid #ccc;
+		padding: 6px 4px;
+		outline: none;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		border-radius: 2px;
+		font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #777;
+		margin: 0;
+		width: 210px;
+		max-width: 100%;
+		display: block;
+		margin-bottom: 20px;
+		background: #fff; }
+	select { 
+		padding: 0; }
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus, 
+	textarea:focus {
+		border: 1px solid #aaa;
+ 		color: #444;
+ 		-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		box-shadow:  0 0 3px rgba(0,0,0,.2); }
+	textarea {
+		min-height: 60px;
+		margin-bottom: 20px; }
+	label,
+	legend { 
+		display: block;
+		font-weight: bold;
+		font-size: 0.75em;  }
+	select { 
+		width: 220px; }
+	input[type="checkbox"] {
+		display: inline; }
+	label span,
+	legend span {
+		font-weight: normal;
+		font-size: 0.75em;
+		color: #444; }
+		
+	/* drupal webform specific
+	================================================== */
+		
+		
+/* #Misc
+================================================== */
+	.remove-bottom { margin-bottom: 0 !important; }
+	.half-bottom { margin-bottom: 10px !important; }
+	.add-bottom { margin-bottom: 20px !important; }
+
+		
+/* END SKELETON BASE.CSS */	
+
+/**
+ * Base styles.
+ * Provides sensible defaults for everything to save you time. Override
+ * with an empty stylesheet to start over from scratch.
+ */
+
+/**
+ * Skip navigation ====================================================
+ *
+ * 508 compliance link for skipping navigation elements.
+ */
+#skipnav {
+  position:absolute;
+  left:-1000px;
+  top:-1000px;
+  }
+
+/**
+ * Page width limiter =================================================
+ *
+ * Can be nested within major structural elements to allow full-width
+ * bleeds combined with a fixed page width. Set a width on this in your
+ * theme to get a consistent page width on major elements.
+ */
+.limiter { margin:0px auto; }
+#main .limiter {}
+
+/**
+ * Links ==============================================================
+ *
+ * Any ul.links are given a horizontal tab-like formatting.
+ */
+ul.links li,
+ul.links li a { float:left; }
+
+ul.links.inline,
+ul.links.inline li,
+ul.links.inline li a {
+  float:none;
+  display:inline;
+  }
+
+/**
+ * Tables =============================================================
+ */
+table {
+  width:100%;
+  margin:0px 0px 20px;
+  }
+
+table th,
+table td { vertical-align:middle; }
+
+/**
+ * Forms ==============================================================
+ */
+input.form-text,
+select,
+textarea { border:1px solid #ccc; }
+
+input.form-submit,
+label { font-weight:bold; }
+
+input.form-submit { cursor:pointer; }
+
+input.form-radio,
+input.form-checkbox { vertical-align:middle; }
+
+.form-item .description,
+.description {
+  color:#666;
+  font-size: 0.687em; /* 11/16 */
+  }
+
+fieldset legend a {background: #888; padding: 5px 10px; color: #fefff8; text-decoration: none; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+fieldset legend a:hover {background: #555; color: #fff}
+
+fieldset.collapsible.collapsed {border: none; padding: 0; background: transparent}
+fieldset.collapsible {border: solid 1px #ccc; padding: 15px; background: #fff;}
+fieldset.collapsible .fieldset-title { cursor:pointer; }
+
+html.js fieldset.collapsed .fieldset-content,
+html.js fieldset.collapsed .fieldset-wrapper { display:none; }
+
+/**
+ * Views ==============================================================
+ */
+table.grid-2 td { width:50%; }
+table.grid-3 td { width:33.3%; }
+table.grid-4 td { width:25%; }
+table.grid-5 td { width:20%; }
+table.grid-6 td { width:16.6%; }
+table.grid-7 td { width:14.2%; }
+table.grid-8 td { width:12.5%; }
+
+/**
+ * Markup free clearing ===============================================
+ *
+ * Consider adding your own selectors to this instead of finding ways
+ * to sneak the clear-block class into Drupal's markup.
+ * From http://www.positioniseverything.net/easyclearing.html
+ */
+ul.links:after,
+.clear-block:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  }
+
+  /* Exclude inline links from clear-block behavior */
+  ul.inline:after {
+    content: "";
+    display:none;
+    clear:none;
+    }
+
+ul.links,
+.clear-block {
+  display: inline-block;
+  }
